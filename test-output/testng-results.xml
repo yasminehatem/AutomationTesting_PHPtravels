@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="7" failed="11" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-06T00:20:19 EET" name="Default suite" finished-at="2020-10-06T00:26:22 EET" duration-ms="362867">
+    <groups>
+    </groups>
+    <test started-at="2020-10-06T00:20:19 EET" name="Default test" finished-at="2020-10-06T00:26:22 EET" duration-ms="362867">
+      <class name="tests.RegisterTest">
+        <test-method is-config="true" signature="loadReport()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:20:19 EET" name="loadReport" finished-at="2020-10-06T00:20:19 EET" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadReport -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:20:19 EET" name="preCondition" finished-at="2020-10-06T00:20:23 EET" duration-ms="4277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="emptyStringFields()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:20:23 EET" name="emptyStringFields" finished-at="2020-10-06T00:20:39 EET" duration-ms="15378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyStringFields -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:20:39 EET" name="postCondition" finished-at="2020-10-06T00:20:39 EET" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:20:40 EET" name="preCondition" finished-at="2020-10-06T00:20:44 EET" duration-ms="3967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="firstNameDigit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:20:44 EET" name="firstNameDigit" data-provider="firstNameDigit" finished-at="2020-10-06T00:20:59 EET" duration-ms="14745" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew2@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at tests.RegisterTestHelpers.handleRegisterNeg(RegisterTestHelpers.java:172)
+at tests.RegisterTestHelpers.firstNameDigit(RegisterTestHelpers.java:39)
+at tests.RegisterTest.firstNameDigit(RegisterTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstNameDigit -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:20:59 EET" name="postCondition" finished-at="2020-10-06T00:20:59 EET" duration-ms="739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:20:59 EET" name="preCondition" finished-at="2020-10-06T00:21:03 EET" duration-ms="3949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="firstNameEqualsLastName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:21:03 EET" name="firstNameEqualsLastName" data-provider="firstNameEqualsLastName" finished-at="2020-10-06T00:21:18 EET" duration-ms="14436" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew1111@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at tests.RegisterTestHelpers.handleRegisterNeg(RegisterTestHelpers.java:172)
+at tests.RegisterTestHelpers.firstNameEqualsLastName(RegisterTestHelpers.java:19)
+at tests.RegisterTest.firstNameEqualsLastName(RegisterTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstNameEqualsLastName -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:21:18 EET" name="postCondition" finished-at="2020-10-06T00:21:18 EET" duration-ms="703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:21:19 EET" name="preCondition" finished-at="2020-10-06T00:21:22 EET" duration-ms="2983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="firstNameFirstLetterSmall(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:21:22 EET" name="firstNameFirstLetterSmall" data-provider="firstNameFirstLetterSmall" finished-at="2020-10-06T00:21:36 EET" duration-ms="14607" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew4@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at tests.RegisterTestHelpers.handleRegisterNeg(RegisterTestHelpers.java:172)
+at tests.RegisterTestHelpers.firstNameFirstLetterSmall(RegisterTestHelpers.java:50)
+at tests.RegisterTest.firstNameFirstLetterSmall(RegisterTest.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstNameFirstLetterSmall -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:21:36 EET" name="postCondition" finished-at="2020-10-06T00:21:37 EET" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:21:37 EET" name="preCondition" finished-at="2020-10-06T00:21:40 EET" duration-ms="3091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="invalidEmailFormat1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:21:40 EET" name="invalidEmailFormat1" data-provider="invalidEmailFormat1" finished-at="2020-10-06T00:21:56 EET" duration-ms="15987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fake@fake]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailFormat1 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:21:56 EET" name="postCondition" finished-at="2020-10-06T00:21:57 EET" duration-ms="767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:21:57 EET" name="preCondition" finished-at="2020-10-06T00:22:01 EET" duration-ms="3945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="invalidEmailFormat2(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:22:01 EET" name="invalidEmailFormat2" data-provider="invalidEmailFormat2" finished-at="2020-10-06T00:22:16 EET" duration-ms="15415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fake.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailFormat2 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:22:16 EET" name="postCondition" finished-at="2020-10-06T00:22:17 EET" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:22:17 EET" name="preCondition" finished-at="2020-10-06T00:22:20 EET" duration-ms="3505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="lastNameDigit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:22:20 EET" name="lastNameDigit" data-provider="lastNameDigit" finished-at="2020-10-06T00:22:35 EET" duration-ms="14960" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew3@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at tests.RegisterTestHelpers.handleRegisterNeg(RegisterTestHelpers.java:172)
+at tests.RegisterTestHelpers.lastNameDigit(RegisterTestHelpers.java:45)
+at tests.RegisterTest.lastNameDigit(RegisterTest.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastNameDigit -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:22:35 EET" name="postCondition" finished-at="2020-10-06T00:22:36 EET" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:22:36 EET" name="preCondition" finished-at="2020-10-06T00:22:39 EET" duration-ms="2981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="lastNameFirstLetterSmall(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:22:39 EET" name="lastNameFirstLetterSmall" data-provider="lastNameFirstLetterSmall" finished-at="2020-10-06T00:22:54 EET" duration-ms="14937" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew5@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at tests.RegisterTestHelpers.handleRegisterNeg(RegisterTestHelpers.java:172)
+at tests.RegisterTestHelpers.lastNameFirstLetterSmall(RegisterTestHelpers.java:55)
+at tests.RegisterTest.lastNameFirstLetterSmall(RegisterTest.java:83)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastNameFirstLetterSmall -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:22:54 EET" name="postCondition" finished-at="2020-10-06T00:22:55 EET" duration-ms="715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:22:55 EET" name="preCondition" finished-at="2020-10-06T00:22:59 EET" duration-ms="4454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="nonUniqueEmail(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:22:59 EET" name="nonUniqueEmail" data-provider="nonUniqueEmail" finished-at="2020-10-06T00:23:14 EET" duration-ms="15062" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[baseuser@baseusernew.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at tests.RegisterTestHelpers.handleRegisterNeg(RegisterTestHelpers.java:172)
+at tests.RegisterTestHelpers.nonUniqueEmail(RegisterTestHelpers.java:81)
+at tests.RegisterTest.nonUniqueEmail(RegisterTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nonUniqueEmail -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:23:14 EET" name="postCondition" finished-at="2020-10-06T00:23:15 EET" duration-ms="761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:23:15 EET" name="preCondition" finished-at="2020-10-06T00:23:20 EET" duration-ms="4972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="nullFields()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:23:20 EET" name="nullFields" finished-at="2020-10-06T00:23:32 EET" duration-ms="11745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nullFields -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:23:32 EET" name="postCondition" finished-at="2020-10-06T00:23:33 EET" duration-ms="748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:23:33 EET" name="preCondition" finished-at="2020-10-06T00:23:37 EET" duration-ms="4481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="passwordConfirmMissmatch(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:23:37 EET" name="passwordConfirmMissmatch" data-provider="passwordConfirmMissmatch" finished-at="2020-10-06T00:23:53 EET" duration-ms="15650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew12@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefakefake]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordConfirmMissmatch -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:23:53 EET" name="postCondition" finished-at="2020-10-06T00:23:54 EET" duration-ms="1449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:23:54 EET" name="preCondition" finished-at="2020-10-06T00:23:58 EET" duration-ms="3774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="passwordExceedLength(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:23:58 EET" name="passwordExceedLength" data-provider="passwordExceedLength" finished-at="2020-10-06T00:24:15 EET" duration-ms="16539" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew10@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[fakefakef]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[fakefakef]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at tests.RegisterTestHelpers.handleRegisterNeg(RegisterTestHelpers.java:172)
+at tests.RegisterTestHelpers.passwordExceedLength(RegisterTestHelpers.java:94)
+at tests.RegisterTest.passwordExceedLength(RegisterTest.java:128)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordExceedLength -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:24:15 EET" name="postCondition" finished-at="2020-10-06T00:24:15 EET" duration-ms="804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:24:15 EET" name="preCondition" finished-at="2020-10-06T00:24:20 EET" duration-ms="4939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="passwordLessThanMinLength(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:24:20 EET" name="passwordLessThanMinLength" data-provider="passwordLessThanMinLength" finished-at="2020-10-06T00:24:35 EET" duration-ms="15013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew11@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordLessThanMinLength -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:24:35 EET" name="postCondition" finished-at="2020-10-06T00:24:36 EET" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:24:36 EET" name="preCondition" finished-at="2020-10-06T00:24:40 EET" duration-ms="3993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="passwordWithoutCapital(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:24:40 EET" name="passwordWithoutCapital" data-provider="passwordWithoutCapital" finished-at="2020-10-06T00:24:55 EET" duration-ms="14888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew2@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordWithoutCapital -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:24:55 EET" name="postCondition" finished-at="2020-10-06T00:24:56 EET" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:24:56 EET" name="preCondition" finished-at="2020-10-06T00:25:00 EET" duration-ms="3975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="passwordWithoutSmall(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:25:00 EET" name="passwordWithoutSmall" data-provider="passwordWithoutSmall" finished-at="2020-10-06T00:25:15 EET" duration-ms="15194" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew9@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[FAKEFAKE]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[FAKEFAKE]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at tests.RegisterTestHelpers.handleRegisterNeg(RegisterTestHelpers.java:172)
+at tests.RegisterTestHelpers.passwordWithoutSmall(RegisterTestHelpers.java:89)
+at tests.RegisterTest.passwordWithoutSmall(RegisterTest.java:121)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordWithoutSmall -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:25:15 EET" name="postCondition" finished-at="2020-10-06T00:25:16 EET" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:25:16 EET" name="preCondition" finished-at="2020-10-06T00:25:20 EET" duration-ms="4001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="phoneNumber1Digit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:25:20 EET" name="phoneNumber1Digit" data-provider="phoneNumber1Digit" finished-at="2020-10-06T00:25:37 EET" duration-ms="17484" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew7@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at tests.RegisterTestHelpers.handleRegisterNeg(RegisterTestHelpers.java:172)
+at tests.RegisterTestHelpers.phoneNumber1Digit(RegisterTestHelpers.java:65)
+at tests.RegisterTest.phoneNumber1Digit(RegisterTest.java:95)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phoneNumber1Digit -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:25:37 EET" name="postCondition" finished-at="2020-10-06T00:25:38 EET" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:25:38 EET" name="preCondition" finished-at="2020-10-06T00:25:41 EET" duration-ms="3477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="phoneNumberChar(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:25:41 EET" name="phoneNumberChar" data-provider="phoneNumberChar" finished-at="2020-10-06T00:25:57 EET" duration-ms="15971" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[phonenumber]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fakenew6@fakef.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at tests.RegisterTestHelpers.handleRegisterNeg(RegisterTestHelpers.java:172)
+at tests.RegisterTestHelpers.phoneNumberChar(RegisterTestHelpers.java:60)
+at tests.RegisterTest.phoneNumberChar(RegisterTest.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phoneNumberChar -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:25:57 EET" name="postCondition" finished-at="2020-10-06T00:25:59 EET" duration-ms="1476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:25:59 EET" name="preCondition" finished-at="2020-10-06T00:26:04 EET" duration-ms="5608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="validRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:26:04 EET" name="validRegister" data-provider="validRegister" finished-at="2020-10-06T00:26:20 EET" duration-ms="15900" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yasmine]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hatem]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[baseuser@baseusernew.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fakefake]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at tests.RegisterTestHelpers.handleRegisterPos(RegisterTestHelpers.java:154)
+at tests.RegisterTestHelpers.validRegister(RegisterTestHelpers.java:12)
+at tests.RegisterTest.validRegister(RegisterTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validRegister -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:26:20 EET" name="postCondition" finished-at="2020-10-06T00:26:22 EET" duration-ms="1626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:tests.RegisterTest@57c758ac]" started-at="2020-10-06T00:26:22 EET" name="TearDown" finished-at="2020-10-06T00:26:23 EET" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- tests.RegisterTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

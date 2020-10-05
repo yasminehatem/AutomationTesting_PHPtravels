@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="tests.RegisterTest">
+        <methods>
+          <include name="validRegister" invocation-numbers="0"/>
+          <include name="firstNameEqualsLastName" invocation-numbers="0"/>
+          <include name="lastNameDigit" invocation-numbers="0"/>
+          <include name="TearDown"/>
+          <include name="postCondition"/>
+          <include name="passwordExceedLength" invocation-numbers="0"/>
+          <include name="passwordWithoutSmall" invocation-numbers="0"/>
+          <include name="phoneNumberChar" invocation-numbers="0"/>
+          <include name="lastNameFirstLetterSmall" invocation-numbers="0"/>
+          <include name="phoneNumber1Digit" invocation-numbers="0"/>
+          <include name="nonUniqueEmail" invocation-numbers="0"/>
+          <include name="firstNameFirstLetterSmall" invocation-numbers="0"/>
+          <include name="preCondition"/>
+          <include name="firstNameDigit" invocation-numbers="0"/>
+          <include name="loadReport"/>
+        </methods>
+      </class> <!-- tests.RegisterTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
