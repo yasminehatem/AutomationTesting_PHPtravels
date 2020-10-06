@@ -3,8 +3,8 @@ This is an automation testing task for PHP travels wbesite Registeration and log
 
 -[Pages](#Pages)
 -[Tests](#Tests)
-- [Data Generation](#Data Generation)
-- [Output Results(Reports)](#Output Results(Reports))
+-[Data Generation](#Data Generation)
+-[Output Results(Reports)](#Output Results(Reports))
 
 
 ### Pages
