@@ -8,10 +8,10 @@ This is an automation testing task for PHP travels wbesite Registeration and log
 
 
 ### Pages
-The Web pages classes for login, register, and account inherits the Page Object Model Design Pattern.
+The Web pages classes for login, register, and account inherit the Page Object Model Design Pattern.
 
 ### Tests
-The tests are done for the Web pages respecteviley which all inherits the base SetupTest .
+The tests are done for the Web pages respecteviley which all inherits the base SetupTest with positive and negative cases .
 
 ### Data
 Test data is separated from the code, it is imported by just its test case name using using APACHE poi from excel and passed as paramaters to the data provider annotation which passes it to the test case.
@@ -22,7 +22,7 @@ Reports Are generated indicationg failures and passes witsh screenshots for both
 # Prerequisites
 - JDK 15
 - Firefox Webdriver
--Eclipse or IntelliJ IDE
+- Eclipse or IntelliJ IDE
 
 # Built With
 - Selenium WebDriver
