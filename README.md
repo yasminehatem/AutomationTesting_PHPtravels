@@ -4,7 +4,7 @@ This is an automation testing task for PHP travels wbesite Registeration and log
 -[Pages](#Pages)
 -[Tests](#Tests)
 -[Data Generation](#Data Generation)
--[Output Results(Reports)](#Output Results(Reports))
+-[Output Results of Reports](#Output Results of Reports)
 
 
 ### Pages
@@ -16,7 +16,7 @@ The tests are done for the Web pages respecteviley which all inherits the base S
 ### Data Generation
 Test data is separated from the code, it is imported by just its test case name using using APACHE poi from excel and passed as paramaters to the data provider annotation which passes it to the test case.
 
-### Output Results(Reports)
+### Output Results of Reports
 Reports Are generated indicationg failures and passes witsh screenshots for both via Extent Reports in two separte folders for Resgiter and login outputs respectively. An assertion error is thrown for testNG for notification in every error.
 
 # Prerequisites
@@ -28,6 +28,6 @@ Reports Are generated indicationg failures and passes witsh screenshots for both
 - Selenium WebDriver
 - TestNG
 - Apache poi
-- Extent Reports
+- Extent Reports 
 
 
